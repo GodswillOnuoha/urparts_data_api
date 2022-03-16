@@ -1,0 +1,15 @@
+# pyenv
+.python-version
+
+__pypackages__/
+
+# Environments
+**.env
+**.venv
+**/env
+**/venv
+.vscode
+.DS_Store
+
+# AutoGen Files
+**__pycache__/

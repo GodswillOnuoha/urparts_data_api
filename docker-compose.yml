@@ -1,0 +1,23 @@
+version: "3.7"
+
+services:
+  db:
+    image: postgres:13
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: fake_password
+    ports:
+      - 5432
+
+  web_scraper:
+    build: ./web_scraper
+    depends_on:
+      - db
+
+  web_api:
+    build: ./web_api
+    depends_on:
+      - db
+      - web_scraper
+    ports:
+      - "8000:8000"

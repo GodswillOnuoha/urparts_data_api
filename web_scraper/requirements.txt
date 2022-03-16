@@ -1,0 +1,4 @@
+aiostream==0.4.4
+beautifulsoup4==4.10.0
+psycopg2==2.9.3
+httpx==0.22.0

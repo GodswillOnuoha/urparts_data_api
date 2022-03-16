@@ -4,7 +4,7 @@ from fastapi import FastAPI
 import uvicorn
 
 from web_api.api import machine_parts_api
-from web_api.settings import log_level, log_filemode
+from web_api.settings import log_level
 
 
 api = FastAPI()

@@ -1,9 +1,10 @@
 # URPARTS Scraper
 
-Urparts web scraper is a simple FastAPI, SQLModel, Python application that scraps machine parts data from https://www.urparts.com/index.cfm/page/catalogue/,
+Urparts web scraper is a simple FastAPI, SQLModel, Python application that scrapes machine parts data from https://www.urparts.com/index.cfm/page/catalogue/,
 saves the data to a database and exposes an endpoint `http://127.0.0.1:8000/api/parts?limit=5` see swagger docs on `http://127.0.0.1:8000/docs` when the app is running.
 
 - A user can query for parts using parameters; see swagger docs
+- I have intentionally left out most of the tests to save time, as no one will be building on this project after now. I can write the tests if required.
 
 #### Technologies
 
